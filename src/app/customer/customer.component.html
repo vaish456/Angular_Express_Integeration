@@ -1,0 +1,16 @@
+<p>customer works!</p>
+
+<table class="table">
+    <tr>
+      <th >ID</th>
+      <th >Name</th>
+      <th >Phone</th>
+      <th >Email</th>
+    </tr>
+    <tr *ngFor="let c of cust">
+      <td>{{c.id}}</td>
+      <td>{{c.name}}</td>
+      <td>{{c.phone}}</td>
+      <td>{{c.email}}</td>
+    </tr>
+</table>

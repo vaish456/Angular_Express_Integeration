@@ -1,0 +1,15 @@
+<p>student works!</p>
+<table class="table">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>School</th>
+      <th>Date</th>
+    </tr>
+    <tr *ngFor="let s of students">
+      <td>{{s.student_id}}</td>
+      <td>{{s.student_name}}</td>
+      <td>{{s.school}}</td>
+      <td>{{s.admit_date}}</td>
+    </tr>
+</table>

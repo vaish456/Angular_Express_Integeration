@@ -1,0 +1,24 @@
+<p>hello-world works!</p>
+&nbsp;<span><input class="btn btn-danger" type="button" (click) = "onClickTable()" value="Display Table"/></span>&nbsp;
+<span><input class="btn btn-danger" type="button" (click) = "onClickList()" value="Display List"/></span>&nbsp;
+<span><input class="btn btn-danger" type="button" (click) = "clearForm()" value="Clear Form"/></span>
+
+<table *ngIf="isTable" class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th>Emp no</th> <th>Emp Name</th> <th>Emp Salary</th> <th>Emp Desg</th>
+        <th>Bonus</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let e of getEmployees()">
+        <td>{{e.empno}}</td>
+        <td>{{e.ename}}</td>
+        <td>{{e.salary}}</td>
+        <td>{{e.desg}}</td>
+        <td>{{e.bonus()}}</td>
+    </tr>
+</table> 
+
+<ul *ngFor="let e of getEmployees()">
+    <li *ngIf="isList">{{e.ename}} has salary {{e.salary}} and Total salary with bonus he got is {{e.bonus()}}</li>
+</ul>

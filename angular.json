@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": []
           },
@@ -124,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "LabProject"
+  "defaultProject": "LabProject",
+  "cli": {
+    "analytics": "fc6add2b-909c-49fe-b62c-113f16dd5651"
+  }
 }

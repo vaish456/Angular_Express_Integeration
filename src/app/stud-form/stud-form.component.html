@@ -1,0 +1,8 @@
+<p>stud-form works!</p>
+<form novalidate #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+    <input type="number" name="student_id" placeholder="Id" ngModel/><br>
+    <input type="text" name="student_name" placeholder="Student Name" ngModel/><br>
+    <input type="text" name="school" placeholder="School " ngModel/><br>
+    <input type="date" name="admit_date" placeholder="D.O.B" ngModel/><br>
+    <input type="submit" value="Submit"/>
+</form>
